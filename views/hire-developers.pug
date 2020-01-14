@@ -1,0 +1,49 @@
+extends layout
+block content 
+    div(class="form-field")
+        div(class="container")
+            div(class="row justify-content-center")
+                div(class="col-lg-7")
+                    div(class="form-box shadow")
+                        h2 Hire Developers
+                        p Tell us about your team below. We will surely get you the best developers to work with.
+                        form(method="POST" action="#")
+                            p
+                                label First Name * 
+                                span(class="ml-2 firstName_feedback") 
+                                input(type="text" class="form-control" name="first_name" id="first_name" required)
+                            p
+                                label Last Name *
+                                span(class="ml-2 lastName_feedback") 
+                                input(type="text" class="form-control" name="last_name" id="last_name" required)
+                            p
+                                label Company Name *
+                                span(class="ml-2 companyName_feedback") 
+                                input(type="text" class="form-control" name="company_name" id="company_name" required)
+                            p
+                                label Work Email *
+                                span(class="ml-2 email_feedback") 
+                                input(type="text" class="form-control" name="email" id="email" required)
+                            p
+                                label Phone Number
+                                span(class="ml-2 number_feedback")  
+                                input(type="text" class="form-control" name="number" id="number")
+                            p
+                                label Country *
+                                span(class="ml-2 country_feedback") 
+                                select(class="form-control" name="country" id="country" required)
+                                    option(value="select" disabled="disabled") Select Country
+                                    option(value="Nigeria") Nigeria 
+                                    option(value="Nigeria") Ghana
+                                    option(value="Nigeria") South Africa
+                            p
+                                input(type="checkbox" id="accept")
+                                em I would like to recieve more information about Ace Africa developers.
+                            p(class="text-center on-submit") 
+                            p(class="text-center") 
+                                button(type="submit" class="btn btn-submit" id="submit") Submit
+                            
+                            a(href="/" class="home-page") Go to HomePage
+                                i(class="fa fa-arrow-left pl-1")
+    include includes/footer.pug
+    script(src='/javascripts/validation/hire.js' type="module")
