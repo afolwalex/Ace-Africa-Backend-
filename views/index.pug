@@ -14,7 +14,7 @@ block content
           li
             a(href="/hire-developers") Hire Developers
           li
-            a(href="#") Digital Skills
+            a(href="/digital-skills") Digital Skills
           li
             a(href="#") e-work
   section(id="intro" class="clearfix")
@@ -39,4 +39,20 @@ block content
               li Duis aute irure dolor in reprehenderit in voluptate velit.
               li Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
   include includes/footerdesign.pug
+  a(href="#" class="acebot" id="acebot")
+    img(src="/images/bot-icon.png" alt="Ace Bot" title="Chat with Ace" width="45px" height="50px")
+  div(class="show-popup")
+    div(class="bot-head")
+      h6(class="bot-logo float-left")
+        img(src="/images/bot-icon.png" width="30px" height="30px")
+        span(class="ml-1") Ace Bot
+      a(href="#" class="float-right" id="close-screen") x
+      div(class="clearfix")
+    div(class="bot-message")
+      p(class="message") I can answer any question you will like to ask.
+    a(href="/live-chat" class="btn-start float-right mr-2") Chat with me &nbsp;
+      i(class="fa fa-comment") 
+      
   include includes/footer.pug
+  script(src="/javascripts/botshow.js")
+

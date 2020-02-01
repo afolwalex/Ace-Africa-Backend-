@@ -1,7 +1,7 @@
 body{
     background: url(/images/jeans.jpg);
     background-size: cover;
-    position: relative;
+	position: relative;
 }
 body:before {
     content: "";
@@ -58,6 +58,11 @@ body:before {
 }
 .blur-feedback-error {
 	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #f00 !important;
+}
+.error {
+	font-size : .9rem ; 
 	font-weight : 600 ; 
 	color : #f00 !important;
 }

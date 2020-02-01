@@ -1,0 +1,12 @@
+include includes/header.pug
+block content 
+    -let loginUrl = "/digital-skills" + "/login"
+    div(class="success")
+        div(class="container")
+            div(class="row justify-content-center")
+                div(class="col-md-6")
+                    div(class="success-box shadow")
+                        p Congratulations! Your account has been created successfully
+                        p Check your email if need be.
+                        a(href=loginUrl class="homepage") Go to the Login Page
+                            i(class="fa fa-arrow-left pl-1")

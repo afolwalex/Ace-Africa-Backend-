@@ -50,7 +50,7 @@ background-color: rgb(6, 12, 34);
 box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 .navbar-brand{
-	font-size: 2rem;
+	font-size: 1.8rem;
   	margin: 0;
   	padding: 0;
   	line-height: 1;
@@ -216,7 +216,7 @@ box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 .btn-start:hover{
 	background: #0a98c0;
-	color: #fff;
+	color: #ffffff !important;
 }
 
 /*......About Section.......*/
@@ -502,4 +502,160 @@ box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
     padding: 10px 12px 10px 12px;
     text-decoration: none;
     border-radius: 10px;
+}
+/*........Digital Skills Page......*/
+.skills-intro{
+	position: relative;
+	background: rgba(6, 12, 34, 0.8);
+	padding-top: 80px;
+	padding-bottom: 60px;
+	color: #ffffff;
+}
+.skills-intro h2{
+	font-family: cursive;
+	font-size: 2.2rem;
+}
+.skills-detail{
+	font-style: italic;
+}
+.form-box{
+	background: #ffffff;
+	padding: 50px 50px 20px 50px;
+}
+.form-head{
+	color: #000000;
+	font-weight: 600;
+}
+.name-feedback{
+	color: #000000;
+}
+.dashboard{
+	margin: 100px;
+}
+.menu-cust *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-cust > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+.menu-cust a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: .9rem;
+    font-weight: 600;
+	text-transform: uppercase;
+}
+.menu-cust a:hover,
+.menu-cust .active > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-item{
+	color: rgba(0, 0, 0, 0.9) !important;
+}
+.profile-box{
+	padding: 30px;
+}
+
+.acebot {
+    position: fixed;
+    background: #343155;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.show-popup{
+    position: fixed;
+    background: #ECE5DD;
+    color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    height: 250px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 10px;
+    transition: background 0.5s;
+	z-index: 11;  
+	display: none;
+}
+.bot-head{
+    background: rgb(6, 12, 34);
+    padding: 15px 5px 2px 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bot-logo span{
+	color: #ffffff;
+	font-size: 1.3rem;
+}
+.bot-head a {
+    color: rgb(6, 12, 34);
+    margin-right: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 10px 3px 10px;
+}
+.botui{
+	padding-top: 50px;
+}
+.bot-message p {
+    background: #ffffff;
+    margin: 30px 0px 10px 30px;
+    width: 300px;
+    border-radius: 10px;
+	padding: 15px;
+	font-style: italic;
+}
+.btn-whatsapp {
+    background: #075E54;
+    color: #ffffff;
+}
+.btn-whatsapp:hover {
+    color: #ffffff;
+}
+
+.botui-container {
+    background-color: inherit;
+}
+
+.botui-actions-container {
+    padding: 0px 30px;
+}
+
+.botui-message-content.text {
+    background-color: #e1fafc;
+    color: #404040;
+}
+
+.botui-message-content.human {
+    background-color: #97e0e5;
+    color: #404040;
+}
+
+button.botui-actions-buttons-button {
+    margin-top: 0px;
+    background: #007bff;
+}
+
+
+@media(max-width: 576px) {
+	.show-popup{
+        width: 250px;
+    }
+    .bot-message p{
+        width: 200px;
+    }
 }

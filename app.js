@@ -22,7 +22,7 @@ const MongoDBStore = require('connect-mongodb-session')(session)
   *
 */
 const store = new MongoDBStore({
-  uri : "mongodb+srv://afolwalex:cometome30@cluster0-acj9f.mongodb.net/test?retryWrites=true&w=majority" , 
+  uri : "mongodb://127.0.0.1:27017/firstdb" , 
 	collection : "sessions"
 })
 var indexRouter = require('./routes/index')

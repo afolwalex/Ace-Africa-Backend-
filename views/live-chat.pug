@@ -1,0 +1,11 @@
+include includes/header.pug
+block content
+    include includes/chatnav.pug
+    div(class="container botui")
+        div(id="chat-bot-ui")
+            bot-ui
+
+    include includes/footer.pug
+    script(src="/javascripts/vue.min.js")
+    script(src="/build/botui.min.js")
+    script(src="/javascripts/chatbot.js")

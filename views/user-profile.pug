@@ -1,0 +1,20 @@
+include includes/header.pug
+block content
+    include includes/usernav.pug
+        div(class="dashboard")
+            div(class="container")
+                div(class="row justify-content-center")
+                    div(class="col-lg-6")
+                        div(class="shadow profile-box")
+                            if profile 
+                                -let userProfile = "/uploads/proifle/" + profile
+                                img(src=imageUrl alt="none" class="rounded-circle" width="100" height="100")
+                            else 
+                                img(src="/uploads/profile/default.jpeg" alt="your profile" class="rounded-circle" width="100" height="100")
+                            p(class="font-weight-bold mt-2") Name: #[span.text-gray #{user.name}] 
+                            p.font-weight-bold Email: #[span.text-gray #{user.email}]
+                            p.font-weight-bold Country: #[span.text-gray #{user.country}]
+                            a(href="#" class="btn-start") Edit Records
+                div(class="text-center mt-5")
+                    a(class="homepage" href=mydashboard) Go to your DashBoard
+    include includes/footer.pug

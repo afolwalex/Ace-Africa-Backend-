@@ -22,45 +22,7 @@
     $('#header').addClass('header-scrolled');
   }
 
-  $('.owl-fans').owlCarousel({
-    animateOut: 'fadeOut',
-    loop: true,
-    autoplayHoverPause: false,
-    autoplay: true,
-    smartSpeed: 1000,
-    dots: false,
-    nav:true,
-    navText: [
-        '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>'
-    ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      1000: {
-        items: 3,
-      }
-    }
-  });
-
-  $('.owl-client').owlCarousel({
-    animateOut: 'fadeOut',
-    loop: true,
-    autoplayHoverPause: false,
-    autoplay: true,
-    smartSpeed: 1000,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      1000: {
-        items: 3,
-      }
-    }
-  });
+ 
   // Smooth scroll for the navigation and links with .scrollto classes
   $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -113,6 +75,8 @@
       }
     });
   });
+
+
 
   
 })(jQuery);

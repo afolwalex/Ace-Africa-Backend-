@@ -1,0 +1,36 @@
+include includes/header.pug
+block content
+    include includes/fixednav.pug
+        -let loginUrl = "/digital-skills" + "/login"
+        section(class="skills-intro")
+            div(class="container")
+                div(class="row")
+                    div(class="col-md-6 mt-5")
+                        h2 Welcome to the Digital Skills Page
+                        p(class="skills-detail mb-4 mt-4") This is where everything happens. Go to your dashboard and enjoy!
+                        a(class="btn btn-start" href=loginUrl) Login
+                        
+                    div(class="col-md-6 mt-5")
+                        div(class="form-box shadow d-none d-md-block")
+                            em(class="form-head text-center mb-3") Sign up if you don't have an account yet.
+                            form(method="POST")
+                                if errors 
+                                    each error in errors 
+                                        p(class='blur-feedback-error')!=  error.msg
+                                input(type="text" class="form-control mt-3" placeholder="Name" id="name" name="name" required)
+                                span(class="name-feedback") 
+                                input(type="text" class="form-control mt-3" placeholder="Email" id="email" name="email" required)
+                                span(class="email-feedback")
+                                input(type="password" class="form-control mt-3" placeholder="Password" id="password" name="password" required)
+                                span(class="password-feedback")
+                                select(class="form-control mt-3" name="country" id="country" required)
+                                    option(value="select" disabled="disabled") Select a country
+                                    option(value="Nigeria") Nigeria
+                                    option(value="Ghana") Ghana
+                                    option(value="South Africa") South Africa
+                                div(class="text-center")
+                                    button(class="btn btn-start mt-3" type="submit" id="submit") Sign Up
+                                    p(class="on-submit")
+                                       
+    include includes/footer.pug
+    script(src='/javascripts/validation/skills_signup.js' type="module")

@@ -1,7 +1,7 @@
 {
-  "name": "e-exam",
+  "name": "Ace-Africa",
   "version": "1.0.0",
-  "description": " A Software-as-a-Service for managing online examination",
+  "description": " A website for Ace Africa",
   "private": true,
   "engines": {
     "node": "12.x"

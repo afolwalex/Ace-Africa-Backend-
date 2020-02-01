@@ -1,0 +1,10 @@
+include includes/header.pug
+block content
+    include includes/usernav.pug
+        div(class="dashboard")
+            div(class="container")
+                if user
+                    p Welcome, #{user.name}
+                    p Work is still in progress...
+    include includes/footer.pug
+    

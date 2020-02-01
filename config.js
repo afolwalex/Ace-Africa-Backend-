@@ -2,7 +2,7 @@
   * Non-secured configuration settings 
 */
 const MONGO_OPTIONS = {
-	URL : "mongodb+srv://afolwalex:cometome30@cluster0-acj9f.mongodb.net/test?retryWrites=true&w=majority" , 
+	URL : "mongodb://127.0.0.1:27017/firstdb" , 
     OPTIONS : {
 	    useNewUrlParser : true , 
 	    useCreateIndex : true , 
