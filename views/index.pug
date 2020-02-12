@@ -1,0 +1,58 @@
+include includes/header.pug
+block content
+
+  header(id="header")
+    div(class="container")
+      div(class="logo float-left")
+        a(href='/' class="navbar-brand") Ace Africa
+      nav(class="menu-custom float-right d-none d-lg-block")
+        ul
+          li
+            a(href="/careers") Careers
+          li
+            a(href="/scc") SCC
+          li
+            a(href="/hire-developers") Hire Developers
+          li
+            a(href="/digital-skills") Digital Skills
+          li
+            a(href="#") e-work
+  section(id="intro" class="clearfix")
+    div(class="intro-container")
+      h2 Learn with us
+      p Want to experience easy, fast and affordable learning? Join ACE AFRICA and secure your future by learning job ready skills.
+      a(href="#" class="btn-start") GET STARTED
+  section(id="about")
+    div(class="container")
+      div(class="row")
+        div(class="col-lg-5 col-md-6")
+          div(class="about-img")
+            img(src="/images/about-img.jpg")
+        div(class="col-lg-7 col-md-6")
+          div(class="about-content")
+            h2 About Us
+            h3 Odio sed id eos et laboriosam consequatur eos earum soluta.
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            p Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.
+            ul
+              li Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              li Duis aute irure dolor in reprehenderit in voluptate velit.
+              li Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+  include includes/footerdesign.pug
+  a(href="#" class="acebot" id="acebot")
+    img(src="/images/bot-icon.png" alt="Ace Bot" title="Chat with Ace" width="45px" height="50px")
+  div(class="show-popup")
+    div(class="bot-head")
+      h6(class="bot-logo float-left")
+        img(src="/images/bot-icon.png" width="30px" height="30px")
+        span(class="ml-1") Ace Bot
+      a(href="#" class="float-right" id="close-screen") x
+      div(class="clearfix")
+    div(class="bot-message")
+      p(class="message") I can answer any question you will like to ask.
+    a(href="/live-chat" class="btn-start float-right mr-2") Chat with me &nbsp;
+      i(class="fa fa-comment") 
+      
+  include includes/footer.pug
+  script(src="/javascripts/botshow.js")
+

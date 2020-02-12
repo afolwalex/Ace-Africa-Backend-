@@ -1,0 +1,68 @@
+body{
+    background: url(/images/jeans.jpg);
+    background-size: cover;
+	position: relative;
+}
+body:before {
+    content: "";
+    background:rgba(6, 12, 34, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.form-field{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.form-box{
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 50px;
+}.btn-submit {
+	font-family: "Montserrat", sans-serif;
+  	font-size: 13px;
+  	font-weight: 600;
+  	letter-spacing: 1px;
+  	padding: 10px 32px;
+  	border-radius: 4px;
+  	transition: 0.5s;
+  	color: #fff;
+	background: #1bb1dc;
+	outline: 0;
+	border: 0;
+}
+.btn-submit:hover{
+	background: #0a98c0;
+	color: #fff;
+}
+.home-page:hover{
+    color: #0a98c0;
+    border: 1px solid #0a98c0;
+    padding: 10px 12px 10px 12px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/*....Form messages.......*/
+.focus-feedback {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #0f0 !important;
+}
+.blur-feedback-success {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #0f0!important;
+}
+.blur-feedback-error {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #f00 !important;
+}
+.error {
+	font-size : .9rem ; 
+	font-weight : 600 ; 
+	color : #f00 !important;
+}

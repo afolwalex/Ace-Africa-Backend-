@@ -1,0 +1,661 @@
+/*.......Normalization..........*/
+body {
+	background: #fff;
+	color: #413e66;
+	font-family: "Open Sans", sans-serif;
+}
+a {
+	color: #1bb1dc;
+	transition: 0.5s;
+} 
+a:hover,
+a:active,
+a:focus {
+	color: #0a98c0;
+	outline: none;
+	text-decoration: none;
+} 
+p {
+	padding: 0;
+	margin: 0 0 30px 0;
+} 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+/*.......Header..........*/
+#header {
+    height: 70px;
+    transition: all 0.5s;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+}
+#header.header-scrolled,
+#header.header-pages {
+height: 70px;
+padding: 15px 0;
+background-color: rgb(6, 12, 34);
+box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+.navbar-brand{
+	font-size: 1.8rem;
+  	margin: 0;
+  	padding: 0;
+  	line-height: 1;
+  	font-weight: 400;
+  	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.navbar-brand:hover{
+	color: #ffffff;
+}
+
+/*.....Navigation.......*/
+.menu-custom *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-custom > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+.menu-custom a {
+    display: block;
+    position: relative;
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: .9rem;
+    font-weight: 600;
+	margin-left: 7px;
+	text-transform: uppercase;
+}
+.menu-custom a:hover,
+.menu-custom .active > a {
+    color: #1bb1dc;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*.......Responsive Navigation..........*/
+.mobile-nav-toggle {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9998;
+	border: 0;
+	background: none;
+	font-size: 24px;
+	transition: all 0.6s;
+	outline: none !important;
+	line-height: 1;
+	cursor: pointer;
+	text-align: right;
+}
+.mobile-nav-toggle i {
+	margin: 20px 18px 0 0;
+	color: #ffffff;
+}
+.mobile-nav-active {
+	overflow: hidden;
+} 
+.mobile-nav-active .mobile-nav {
+	left: 0;
+} 
+.mobile-nav-active .mobile-nav-toggle i {
+	color: #fff;
+}
+.mobile-nav {
+	position: fixed;
+	top: 70px;
+	bottom: 0;
+	z-index: 9999;
+	overflow-y: auto;
+	left: -260px;
+	width: 260px;
+	padding-top: 18px;
+	background: #413e66;
+	transition: all 1s;
+}
+.mobile-nav * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mobile-nav a {
+	display: block;
+	position: relative;
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.mobile-nav a:hover,
+.mobile-nav .active > a {
+  	color: #1bb1dc;
+  	text-decoration: none;
+}
+
+/*....Intro Section.....*/
+#intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #f5f8fd url(/images/matrix.jpg) center top no-repeat;
+    background-size: cover;
+}
+ #intro:before {
+    content: "";
+    background:rgba(6, 12, 34, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+#intro h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#intro p {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 1.15rem;
+    max-width: 1000px;
+}
+.btn-start {
+	font-family: "Montserrat", sans-serif;
+  	font-size: 13px;
+  	font-weight: 600;
+  	letter-spacing: 1px;
+  	padding: 10px 32px;
+  	border-radius: 4px;
+  	transition: 0.5s;
+  	color: #fff;
+	background: #1bb1dc;
+	outline: 0;
+	border: 0;
+}
+.btn-start:hover{
+	background: #0a98c0;
+	color: #ffffff !important;
+}
+
+/*......About Section.......*/
+#about {
+	padding: 80px 0;
+} 
+#about .about-content {
+	padding-top: 40px;
+}  
+#about .about-content h2 {
+	color: #413e66;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+} 
+#about .about-content h3 {
+	color: #696592;
+	font-weight: 400;
+	font-size: 22px;
+	font-style: italic;
+}  
+#about .about-content ul {
+	list-style: none;
+	padding: 0;
+}  
+#about .about-content ul li {
+	padding-bottom: 10px;
+}  
+#about .about-content ul li i {
+	font-size: 20px;
+	padding-right: 4px;
+	color: #1bb1dc;
+}  
+#about .about-img {
+	position: relative;
+	margin: 30px 30px 30px 30px;
+}  
+#about .about-img img {
+	width: 100%;
+	border: 8px solid #fff;
+	transition: .5s;
+} 
+#about .about-img img:hover {
+	width: 100%;
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+}  
+#about .about-img::before {
+	position: absolute;
+	left: -31px;
+	top: -30px;
+	width: 90%;
+	height: 92%;
+	z-index: -1;
+	content: '';
+	background-color: #ebf1fa;
+	transition: .5s;
+}  
+#about .about-img::after {
+	position: absolute;
+	right: -31px;
+	bottom: -30px;
+	width: 90%;
+	height: 92%;
+	z-index: -1;
+	content: '';
+	background-color: #ebf1fa;
+	transition: .5s;
+}
+
+/*....Careers Section.....*/
+.navbar-head{
+	background: rgb(6, 12, 34);
+}
+#careers-intro {
+    width: 100%;
+    height: 70vh;
+    background: url(/images/laptop.jpg);
+	background-size: cover;
+	position: relative;
+	top: 70px;
+}
+#careers-intro:before {
+    content: "";
+    background:rgba(6, 12, 34, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#careers-intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+#careers-intro h2{
+	color: #ffffff;
+}
+#careers-intro p{
+	color: #ffffff;
+}
+#about-careers{
+	padding: 80px 0 40px 0;
+}
+.content{
+	padding-top: 40px;
+}
+.content p{
+	line-height: 30px;
+	color: #000000;
+	text-align: justify;
+}
+#submit-details {
+	padding: 80px 0 40px 0;
+	background: rgba(6, 12, 34, 0.8);
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+#submit-details p{
+	color: #ffffff;
+}
+#submit-details span{
+	color: #ffffff;
+}
+#internship{
+	padding: 60px 0 40px 0;
+	text-align: center;
+}
+#internship p{
+	line-height: 30px;
+	color: #000000;
+	text-align: justify;
+}
+
+/*.....Footer.........*/
+.footer{
+	background: rgb(6, 12, 34);
+	padding: 60px 0 10px 0;
+	color: #ffffff;
+	font-size: .9rem;
+}
+.footer .footer-para{
+	color: #ffffff;
+	font-size: .9rem;
+}
+.footer .footer-head{
+	font-size: 1rem;
+	font-weight: 600;
+}
+.footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer .socials li{
+	display: inline;
+	margin-right: 20px;
+}
+.footer .socials li a {
+	font-size: 1.3rem;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 5px 12px 5px 12px;
+	border-radius: 50%;
+}
+.footer .socials li a:hover{
+	background: #1bb1dc;
+	border: none;
+}
+.copyright{
+	background: #101522;
+	padding: 20px 0 20px 0;
+}
+.copyright p{
+	margin: 0;
+	color: #ffffff;
+}
+
+/*....Form messages.......*/
+.focus-feedback {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #0f0 !important;
+}
+.blur-feedback-success {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #0f0!important;
+}
+.blur-feedback-error {
+	font-size : .8rem ; 
+	font-weight : 600 ; 
+	color : #f00 !important;
+}
+
+/*......SCC Page.........*/
+#scc-intro {
+    width: 100%;
+    height: 70vh;
+    background: url(/images/manhattan.jpg);
+	background-size: cover;
+	position: relative;
+	top: 70px;
+}
+#scc-intro:before {
+    content: "";
+    background:rgba(6, 12, 34, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#scc-intro .scc-intro-container {
+    position: absolute;
+	bottom: 0;
+    top: 30px;
+	right: 0;
+	left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+.scc-intro-container h2{
+	color: #ffffff;
+}
+.scc-intro-container p{
+	color: #ffffff;
+}
+
+#register-club{
+	padding: 80px 0 40px 0;
+}
+#register-club .code-club{
+	padding-top: 50px;
+}
+.fieldbox{
+	padding: 30px;
+}
+.fieldbox p{
+	font-style: italic;
+}
+
+/*.....Success Page.........*/
+.success{
+	margin-top: 5rem;
+}
+.success-box{
+	padding: 50px;
+}
+.homepage:hover{
+    color: #0a98c0;
+    border: 1px solid #0a98c0;
+    padding: 10px 12px 10px 12px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+/*........Digital Skills Page......*/
+.skills-intro{
+	position: relative;
+	background: rgba(6, 12, 34, 0.8);
+	padding-top: 80px;
+	padding-bottom: 60px;
+	color: #ffffff;
+}
+.skills-intro h2{
+	font-family: cursive;
+	font-size: 2.2rem;
+}
+.skills-detail{
+	font-style: italic;
+}
+.form-box{
+	background: #ffffff;
+	padding: 50px 50px 20px 50px;
+}
+.form-head{
+	color: #000000;
+	font-weight: 600;
+}
+.name-feedback{
+	color: #000000;
+}
+.dashboard{
+	margin: 100px;
+}
+.menu-cust *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-cust > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+.menu-cust a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: .9rem;
+    font-weight: 600;
+	text-transform: uppercase;
+}
+.menu-cust a:hover,
+.menu-cust .active > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.dropdown-item{
+	color: rgba(0, 0, 0, 0.9) !important;
+}
+.profile-box{
+	padding: 30px;
+}
+
+.acebot {
+    position: fixed;
+    background: #343155;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.show-popup{
+    position: fixed;
+    background: #ECE5DD;
+    color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    height: 250px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 10px;
+    transition: background 0.5s;
+	z-index: 11;  
+	display: none;
+}
+.bot-head{
+    background: rgb(6, 12, 34);
+    padding: 15px 5px 2px 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bot-logo span{
+	color: #ffffff;
+	font-size: 1.3rem;
+}
+.bot-head a {
+    color: rgb(6, 12, 34);
+    margin-right: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3px 10px 3px 10px;
+}
+.botui{
+	padding-top: 50px;
+}
+.bot-message p {
+    background: #ffffff;
+    margin: 30px 0px 10px 30px;
+    width: 300px;
+    border-radius: 10px;
+	padding: 15px;
+	font-style: italic;
+}
+.btn-whatsapp {
+    background: #075E54;
+    color: #ffffff;
+}
+.btn-whatsapp:hover {
+    color: #ffffff;
+}
+
+.botui-container {
+    background-color: inherit;
+}
+
+.botui-actions-container {
+    padding: 0px 30px;
+}
+
+.botui-message-content.text {
+    background-color: #e1fafc;
+    color: #404040;
+}
+
+.botui-message-content.human {
+    background-color: #97e0e5;
+    color: #404040;
+}
+
+button.botui-actions-buttons-button {
+    margin-top: 0px;
+    background: #007bff;
+}
+
+
+@media(max-width: 576px) {
+	.show-popup{
+        width: 250px;
+    }
+    .bot-message p{
+        width: 200px;
+    }
+}

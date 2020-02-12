@@ -1,0 +1,46 @@
+include includes/header.pug
+block content
+    include includes/fixednav.pug
+        section(id="scc-intro")
+            div(class="scc-intro-container")
+                h2 School Code Club
+                p We can manage your code club for you. All you need to do is register.
+                a(href="#apply" class="btn-start") Register
+        section(id="register-club")
+            div(class="container code-club")
+                form(method="POST")
+                    div(class="row justify-content-center")
+                        div(class="col-md-9")
+                            div(class="fieldbox shadow")
+                                h2(class="text-center") Code Club Form
+                                p(class="text-center") Fill in all the fields correctly
+                                div(class="row")
+                                    div(class="col-md-6")
+                                        input(type="text" class="form-control" name="name" id="name" placeholder="Name of Club" required)
+                                        p(class="name-feedback")
+                                    div(class="col-md-6")
+                                        input(type="text" class="form-control" name="manager" id="manager" placeholder="Club Manager" required)
+                                        p(class="manager-feedback")
+                                    div(class="col-md-6")
+                                        input(type="text" class="form-control" name="applicants" id="applicants" placeholder="Total Number of Applicants" required)
+                                        p(class="applicant-feedback")
+                                    div(class="col-md-6")
+                                        select(class="form-control" name="level" id="level" required)
+                                            option(value="level" disabled="disabled") Level
+                                            option(value="beginner") Beginner
+                                            option(value="amatuer") Amatuer
+                                            option(value="professional") Professional
+                                            option(value="expert") Expert
+                                    div(class="col-md-6")
+                                        input(type="text" class="form-control" id="location" name="location" placeholder="Location" required)
+                                        p(class="location-feedback")
+                                    div(class="col-md-6")
+                                        input(type="text" class="form-control" id="stack" name="stack" placeholder="Stack" required)
+                                        p(class="stack-feedback")
+                                div(class="text-center")
+                                    p(class="on-submit")
+                                    button(type="submit" class="btn btn-start" id="submit") Submit
+        include includes/footerdesign.pug
+
+    include includes/footer.pug
+    script(src='/javascripts/validation/scc.js' type="module")

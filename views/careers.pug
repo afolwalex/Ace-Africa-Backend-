@@ -1,0 +1,100 @@
+include includes/header.pug
+block content
+    include includes/fixednav.pug
+        section(id="careers-intro")
+            div(class="intro-container")
+                h2 Want to join us?
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                a(href="#apply" class="btn-start") Apply
+                    i(class="fa fa-arrow-down")
+        section(id="about-careers")
+            div(class="content")
+                div(class="container")
+                    h2(class="text-center") Hiring!
+                    div(class="row justify-content-center")
+                        div(class="col-lg-10")
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at rerum blanditiis rem tempore laudantium, voluptatum dolorum repellendus adipisci cumque quia alias temporibus nobis. Voluptatibus sed fugit et iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores culpa, voluptas exercitationem ipsa doloribus modi est eveniet error assumenda neque magnam earum quae ullam? Repudiandae cum ipsum magnam asperiores culpa?
+            hr
+            div(id="apply")
+                div(class="container")
+                    h2(class="text-center") Current Openings
+                    div(class="row mb-4")
+                        div(class="col-md-4 mb-2")
+                            input(type="search" class="form-control" placeholder="search by job title")
+                        div(class="col-md-4 mb-2")
+                            select(class="form-control")
+                                option(value="location") Location
+                                option(value="location") Lagos
+                                option(value="location") Ibadan
+                                option(value="location") Enugu
+                                option(value="location") Abeokuta
+                        div(class="col-md-4 mb-2")
+                            select(class="form-control")
+                                option(value="location") Department
+                                option(value="location") Database Management
+                                option(value="location") Engineering
+                                option(value="location") Finance
+                                option(value="location") Marketing
+                                option(value="location") Mobile Development
+                                option(value="location") Web Development
+                    div(class="row justify-content-center")
+                        div(class="col-lg-10")
+                            div(class="d-flex justify-content-between")
+                                div
+                                    h6(class="my-0") 
+                                        a(href="#") Software Developer - FrontEnd 
+                                i(class="text-muted") Remote
+                            hr
+                            div(class="d-flex justify-content-between")
+                                div
+                                    h6(class="my-0") 
+                                        a(href="#") Software Developer - BackEnd
+                                i(class="text-muted") Lagos, Nigeria
+                            hr
+                            div(class="d-flex justify-content-between")
+                                div
+                                    h6(class="my-0") 
+                                        a(href="#") Chemistry Teacher
+                                i(class="text-muted") Lagos, Nigeria
+                            hr
+                            div(class="d-flex justify-content-between")
+                                div
+                                    h6(class="my-0") 
+                                        a(href="#") Graphics Designer
+                                i(class="text-muted") Remote
+                            hr
+        section(id="submit-details")
+            div(class="container")
+                p(class="text-center") Not seeing what you are looking for? Submit your details here. We will let you know when there's an opportunity for you.
+                form(method="POST" action="#")
+                    div(class="row")
+                        div(class="col-md-6")
+                            input(type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" required)
+                            p(class="firstname-feedback")
+                        div(class="col-md-6")
+                            input(type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" required)
+                            p(class="lastname-feedback")
+                        div(class="col-md-6")
+                            input(type="email" class="form-control" name="email" id="email" placeholder="Email" required)
+                            p(class="email-feedback")
+                        div(class="col-md-6")
+                            input(type="text" class="form-control" name="number" id="number" placeholder="Mobile Number" required)
+                            p(class="number-feedback")
+                        div(class="col-md-6")
+                            input(type="text" class="form-control" name="location" id="location" placeholder="Location" required)
+                            p(class="location-feedback")
+                        div(class="col-md-4 mb-1")
+                            input(type="file" class="form-control" placeholder="ndj")
+                        div(class="col-md-2 mb-3")
+                            span Your Resume
+                    div(class="text-center")
+                            button(class="btn-start mb-1" type="submit" id="submit") Submit
+                            p(class="on-submit" name="on_submit")
+        section(id="internship")
+            div(class="container")
+                h3(class="text-center") Internship is currently ongoing...
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at rerum blanditiis rem tempore laudantium, voluptatum dolorum repellendus adipisci cumque quia alias temporibus nobis. Voluptatibus sed fugit et iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores culpa, voluptas exercitationem ipsa doloribus modi est eveniet error assumenda neque magnam earum quae ullam? Repudiandae cum ipsum magnam asperiores culpa?
+                a(class="btn-start" href="#") Enter
+        include includes/footerdesign.pug
+    include includes/footer.pug
+    script(src='/javascripts/validation/career.js' type="module")
